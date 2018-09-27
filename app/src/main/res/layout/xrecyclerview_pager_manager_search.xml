@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/pager_manager_search_havecontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.jcodecraeer.xrecyclerview.XRecyclerView
+            android:id="@+id/pager_manager_search_xrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </com.jcodecraeer.xrecyclerview.XRecyclerView>
+    </FrameLayout>
+
+    <!-- 无内容的情况 -->
+    <RelativeLayout
+        android:id="@+id/pager_manager_search_nocontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无数据"
+            android:textSize="20sp"
+            android:textColor="@color/gray_color2"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+
+    <!-- 加载中的布局 -->
+    <RelativeLayout
+        android:id="@+id/pager_manager_search_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/pager_manager_search_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager_manager_search_progressbar"
+            android:text="加载中,请稍后..."
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

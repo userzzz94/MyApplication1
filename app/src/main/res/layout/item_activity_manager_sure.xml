@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_x200"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_x15"
+            android:id="@+id/manager_sure_llinfo" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_x65">
+
+                <TextView
+                    android:id="@+id/manager_sure_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高越越"
+                    android:textColor="@color/black_color1"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_x5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/manager_sure_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话:"
+                    android:textColor="@color/black_color1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/manager_sure_telnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15234562490"
+                    android:textColor="@color/blue_color1"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="@dimen/dp_x40"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_x5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车牌号:"
+                    android:textColor="@color/black_color1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/manager_sure_carnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="鲁A12345"
+                    android:layout_marginLeft="@dimen/dp_x40"
+                    android:textColor="@color/blue_color1"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_x5"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆类型:"
+                    android:textColor="@color/black_color1"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/manager_sure_cartype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_x40"
+                    android:text="6.8米/高栏"
+                    android:textColor="@color/blue_color1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_x5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆状态:"
+                    android:textColor="@color/black_color1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/manager_sure_carstate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_x40"
+                    android:text="空闲"
+                    android:textColor="@color/blue_color1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <CheckBox
+
+        android:id="@+id/manager_sure_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingRight="20dp" />
+
+
+    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray_color1"
+        android:id="@+id/view" />
+
+
+</RelativeLayout>
+
+

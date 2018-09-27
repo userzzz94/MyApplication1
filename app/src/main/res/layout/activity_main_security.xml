@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activity.huafeng.com.myapplication1.activity.MainActivity_Security">
+
+    <activity.huafeng.com.myapplication1.view.NoScrollViewPager
+        android:id="@+id/activity_main_security_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </activity.huafeng.com.myapplication1.view.NoScrollViewPager>
+
+    <!-- 这里可以添加一条间隔线 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray_color1"/>
+
+    <RadioGroup
+        android:id="@+id/activity_main_security_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RadioButton
+            android:id="@+id/activity_main_security_order"
+            style="@style/activity_main_radiobutton_style"
+            android:text="扫码" />
+        <RadioButton
+            android:id="@+id/activity_main_security_mine"
+            style="@style/activity_main_radiobutton_style"
+            android:text="订单" />
+    </RadioGroup>
+
+</LinearLayout>

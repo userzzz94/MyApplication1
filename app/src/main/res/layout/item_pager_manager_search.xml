@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_x240"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pager_manager_search_llnum"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务单号"
+            android:textColor="@color/black_color1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/pager_manager_search_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_x15"
+            android:text="1234"
+            android:textColor="#457bad"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_manager_search_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x50"
+        android:layout_below="@+id/pager_manager_search_llnum"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <activity.huafeng.com.myapplication1.view.AutoScrollTextView
+            android:id="@+id/pager_manager_search_qsd_textview"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp_x40"
+            android:src="@drawable/icon_main_to_pressed" />
+
+        <activity.huafeng.com.myapplication1.view.AutoScrollTextView
+            android:id="@+id/pager_manager_search_zdd_textview"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:text="济南"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pager_manager_search_linearlayout2"
+        android:layout_width="@dimen/dp_x600"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_manager_search_linearlayout1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货物名称"
+                android:textColor="@color/black_color1"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pager_manager_search_cargoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="煤"
+                android:textColor="#457bad"
+                android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货物吨位"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+            <TextView
+            android:id="@+id/pager_manager_search_cargoweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="10吨"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_manager_search_linearlayout3"
+        android:layout_width="@dimen/dp_x600"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_manager_search_linearlayout2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="司机姓名"
+                android:textColor="@color/black_color1"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pager_manager_search_carname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="煤"
+                android:textColor="#457bad"
+                android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车牌号"
+                android:textColor="@color/black_color1"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pager_manager_search_carnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="10吨"
+                android:textColor="#457bad"
+                android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_manager_search_linearlayout3"
+        android:id="@+id/linearLayout">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录入时间"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/pager_manager_search_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="煤"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x15"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pager_manager_search_zt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_x100"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="30dp"
+        android:padding="@dimen/dp_x10"
+        android:text="状态"
+        android:textColor="@color/gray_color2"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x1"
+        android:background="@color/gray_color1"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

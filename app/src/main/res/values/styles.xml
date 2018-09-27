@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 主界面的radiobutton布局 -->
+    <style name="activity_main_radiobutton_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_activity_main_text</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">@dimen/dp_x0</item>
+        <item name="android:paddingBottom">@dimen/dp_x10</item>
+        <item name="android:paddingTop">@dimen/dp_x10</item>
+    </style>
+
+    <!--透明activity的style-->
+    <style name="myTransparent" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@drawable/popupbackground</item> <!--弹窗 -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 半透明 -->
+    </style>
+    
+    <!--弹窗格式activity的style-->
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/popupbackground</item>
+    </style>
+
+    <!-- 车队端 查询界面的radioGroup状态选择器 -->
+    <style name="style_pager_manager_search_radiogroupstyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/dp_x80</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">
+            @drawable/selector_pager_manager_search_status_selector
+        </item>
+    </style>
+
+</resources>

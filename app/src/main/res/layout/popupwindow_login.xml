@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#33000000"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="@dimen/dp_x600"
+        android:layout_height="@dimen/dp_x150"
+        android:background="@drawable/shape_popupwindow_login">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/AVLoadingIndicatorView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="13dp"
+            android:gravity="center"
+            app:indicator="Pacman"
+            app:indicator_color="@color/blue_low" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="39dp"
+            android:layout_toEndOf="@+id/AVLoadingIndicatorView2"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="正在登陆，请稍候..."
+            android:textColor="@color/blue_color1"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

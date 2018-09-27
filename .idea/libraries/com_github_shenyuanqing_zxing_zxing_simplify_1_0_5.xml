@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.shenyuanqing.zxing:zxing-simplify-1.0.5">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zxing-simplify-1.0.5.aar/c2b3e32864b28669bbd6f2abb1fca786/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/zxing-simplify-1.0.5.aar/c2b3e32864b28669bbd6f2abb1fca786/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.shenyuanqing.zxing/zxing-simplify/1.0.5/9bb72430a31f090220e70e269fe3360c23b5fa6b/zxing-simplify-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

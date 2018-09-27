@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_x160"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp_x15">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x50">
+            <TextView
+                android:layout_width="@dimen/dp_x250"
+                android:layout_height="@dimen/dp_x50"
+                android:text="装车完成："
+                android:textColor="@color/black_color1"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/message_number"
+                android:layout_width="@dimen/dp_x250"
+                android:layout_height="@dimen/dp_x50"
+                android:layout_marginLeft="@dimen/dp_x15"
+                android:text="单号"
+                android:textColor="@color/black_color2"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x50">
+            <TextView
+                android:id="@+id/message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_x50"
+                android:text="司机姓名"
+                android:textColor="@color/black_color1"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/message_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_x50"
+                android:layout_marginLeft="@dimen/dp_x20"
+                android:text="司机电话"
+                android:textColor="@color/gray_color2"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_carnum"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_x50"
+            android:text="车牌号"
+            android:textColor="@color/blue_color2"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/message_kd"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_x50"
+        android:layout_weight="2"
+        android:layout_marginLeft="@dimen/dp_x5"
+        android:text="车牌号"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/blue_color2"
+        android:textSize="15sp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/message_time"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp_x6"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="08:48"-->
+        <!--android:textColor="@color/gray_color2"-->
+        <!--android:textSize="13dp" />-->
+
+
+</LinearLayout>

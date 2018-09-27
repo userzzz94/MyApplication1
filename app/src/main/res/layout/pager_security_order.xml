@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x120"
+        android:background="@color/blue_low"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_sscan_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="安保检查"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/security_tv_consoleText" />
+
+    <Button
+        android:id="@+id/pager_security_order_btn"
+        android:layout_width="@dimen/dp_x400"
+        android:layout_height="@dimen/dp_x80"
+        android:layout_below="@+id/login_input"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/selector_activity_login_button_login"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="扫一扫" />
+
+</LinearLayout>

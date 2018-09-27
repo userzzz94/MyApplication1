@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_x160"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pager_manager_findcar_llnum"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划单号"
+            android:textColor="@color/black_color1"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pager_manager_findcar_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_x15"
+            android:text="1234"
+            android:textColor="#457bad"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_manager_findcar_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x40"
+        android:layout_below="@+id/pager_manager_findcar_llnum"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <activity.huafeng.com.myapplication1.view.AutoScrollTextView
+            android:id="@+id/pager_manager_findcar_qsd_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black_color1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_x40"
+            android:layout_height="@dimen/dp_x40"
+            android:src="@drawable/icon_main_to_pressed" />
+
+        <activity.huafeng.com.myapplication1.view.AutoScrollTextView
+            android:id="@+id/pager_manager_findcar_zdd_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="济南"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/black_color1"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pager_manager_findcar_linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_manager_findcar_linearlayout1">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货物名称"
+            android:textColor="@color/black_color1"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/pager_manager_findcar_cargoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="煤"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x15"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_manager_findcar_linearlayout2"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货物吨位"
+            android:textColor="@color/black_color1"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/pager_manager_findcar_cargoweight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="10吨"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x15"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pager_manager_findcar_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:padding="@dimen/dp_x10"
+        android:text="选择司机"
+        android:textColor="@drawable/selector_textcolor_blue_and_gray"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x1"
+        android:background="@color/gray_color1"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

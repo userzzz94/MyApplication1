@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--车队注册-->
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="activity.huafeng.com.myapplication1.activity.RegistManagerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_x120"
+                android:background="@color/blue_low"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tv_mregister_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="车队注册"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_x50"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="车队名称"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/dp_x30"
+                    android:textColor="@color/black_color2"/>
+                <activity.huafeng.com.myapplication1.view.MyEditText
+                    android:id="@+id/regist_manager_et_name"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入车队名称"
+                    android:background="@drawable/selector_activity_login_edittext_background"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/dp_x40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:layout_marginLeft="@dimen/dp_x50"
+                android:layout_marginRight="@dimen/dp_x50"
+                android:background="@color/gray_color7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="所属矿点"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/dp_x30"
+                    android:textColor="@color/black_color2"/>
+
+                <org.angmarch.views.NiceSpinner
+                    android:id="@+id/regist_manager_sp_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.5"
+                    android:hint="请选择所属矿点"
+                    android:textSize="14sp"
+                    app:arrowTint="@color/gray_color2"
+                    app:textTint="@color/gray_color4" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/dp_x50"
+                android:layout_marginRight="@dimen/dp_x50"
+                android:background="@color/gray_color7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="@dimen/dp_x20">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="联系方式"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/dp_x30"
+                    android:textColor="@color/black_color2"/>
+                <activity.huafeng.com.myapplication1.view.MyEditText
+                    android:id="@+id/regist_manager_et_tel"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入联系方式"
+                    android:background="@drawable/selector_activity_login_edittext_background"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/dp_x40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:layout_marginLeft="@dimen/dp_x50"
+                android:layout_marginRight="@dimen/dp_x50"
+                android:background="@color/gray_color7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="@dimen/dp_x30"
+                    android:textColor="@color/black_color2"/>
+                <activity.huafeng.com.myapplication1.view.MyEditText
+                    android:id="@+id/regist_manager_et_account"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:hint="请设置用户名"
+                    android:background="@drawable/selector_activity_login_edittext_background"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="@dimen/dp_x40"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:layout_marginLeft="@dimen/dp_x50"
+                android:layout_marginRight="@dimen/dp_x50"
+                android:background="@color/gray_color7"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_x30"
+                    android:layout_weight="2"
+                    android:text="登录密码"
+                    android:textColor="@color/black_color2"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/regist_manager_et_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_x40"
+                    android:layout_weight="5"
+                    android:hint="不全为数字/不包含非法字符"
+                    android:background="@drawable/selector_activity_login_edittext_background"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/regist_manager_img_eye"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="2" />
+
+
+             
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp_x20"
+                android:layout_marginLeft="@dimen/dp_x50"
+                android:layout_marginRight="@dimen/dp_x50"
+                android:background="@color/gray_color7"/>
+
+
+            <Button
+                android:id="@+id/regist_manager_btn_finish"
+                android:layout_width="@dimen/dp_x500"
+                android:layout_height="@dimen/dp_x80"
+                android:layout_below="@+id/login_input"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_x60"
+                android:layout_marginBottom="@dimen/dp_x25"
+                android:background="@drawable/selector_activity_login_button_login"
+                android:gravity="center"
+                android:text="完成注册"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_low">#FAFAFA</color>
+    <color name="blue_color1">#4F94CD</color>
+    <color name="blue_color2">#0072a1</color>
+    <color name="blue_color3">#a0def2</color>
+    <color name="blue_high" >#1779d4</color>
+    <color name="blue_login_light" > #22DDDD</color>
+    <color name="blue_low" >#0282fd</color>
+    <color name="blue_login">#FF72CAE1</color><!--渐变蓝色-->
+    <color name="superlink">#457bad</color>
+    <color name="blue_login2">#61b3ff</color>
+    <color name="blue_login3">#a5d0f5</color>
+    <color name="gray_color1">#DBDBDB</color>
+    <color name="gray_color2">#969696</color>
+    <color name="gray_color3">#F0F0F0</color>
+    <color name="gray_color4">#707070</color>
+    <color name="gray_color5">#F9F9F9</color>
+    <color name="gray_color6">#bbbbbb</color>
+    <color name="gray_color7">#f1f1f1</color>
+    <color name="black_color1">#000000</color>
+    <color name="black_color2">#1b1b1b</color>
+    <color name="main_button_normal">#444444</color>
+    <color name="main_button_checked">#29a1f7</color>
+    <color name="orange_normal">#ff7043</color>
+    <color name="orange_pressed">#f6ba40</color>
+    <color name="my_trans">#66000000</color>
+
+    <!--<color name="red">#fe6569</color>-->
+
+
+
+</resources>

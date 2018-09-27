@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x120"
+        android:background="@color/blue_low"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_dsendcar_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="司机任务"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/pager_driver_sendcar_recycleview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_driver_consoleText" />
+
+    <FrameLayout
+        android:id="@+id/pager_driver_sendcar_nocontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无新的订单消息"
+            android:textSize="20sp"
+            android:textColor="@color/gray_color2"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

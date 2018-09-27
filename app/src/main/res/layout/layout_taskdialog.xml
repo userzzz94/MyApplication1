@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_x150"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x80"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:text="标题"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/black_color1"/>-->
+        <TextView
+            android:id="@+id/taskdialog_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_x80"
+            android:gravity="center"
+            android:text="铅封系统"
+            android:textSize="20sp"
+            android:textColor="@color/blue_low"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="消息内容"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/black_color1"/>-->
+    <TextView
+        android:id="@+id/taskdialog_tv_context"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_x15"
+        android:gravity="center"
+        android:text="您有一条新订单
+  请及时查看！"
+        android:textSize="18sp"
+        android:textColor="@color/black_color1"
+        android:layout_marginLeft="@dimen/dp_x25"
+        android:layout_marginRight="@dimen/dp_x25"/>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+            <!--android:id="@+id/taskdialog_btn_news"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/dp_x80"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="消息查看"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginTop="@dimen/dp_x30"-->
+            <!--android:layout_marginLeft="@dimen/dp_x25"-->
+            <!--android:layout_marginRight="@dimen/dp_x25"-->
+            <!--android:layout_marginBottom="@dimen/dp_x30"-->
+            <!--android:background="@drawable/selector_activity_login_button_login"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="15sp"-->
+            <!--android:visibility="gone"/>-->
+
+        <Button
+            android:id="@+id/taskdialog_btn_order"
+            android:layout_width="269dp"
+            android:layout_height="@dimen/dp_x80"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_x30"
+            android:layout_marginLeft="@dimen/dp_x25"
+            android:layout_marginRight="@dimen/dp_x25"
+            android:layout_marginTop="@dimen/dp_x30"
+            android:layout_weight="1"
+            android:background="@drawable/selector_activity_login_button_login"
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+
+</LinearLayout>

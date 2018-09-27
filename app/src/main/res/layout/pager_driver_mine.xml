@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view_my_driver">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x200"
+        android:background="@color/main_button_checked"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:text="司机姓名"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/dp_x50"/>
+            <TextView
+                android:id="@+id/my_driver_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="车队名称"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text="登录账号"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/my_driver_tel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="5dp"
+            android:text="13894637387"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dp_x40"/>
+
+    </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/dp_x10">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="车牌号"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/black_color1"-->
+                <!--android:layout_marginTop="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/my_driver_carnum"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:text="13894637387"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textColor="@color/white" />-->
+
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_driver_myItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dp_x50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x80">
+            <ImageView
+                android:layout_width="@dimen/dp_x50"
+                android:layout_height="@dimen/dp_x40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_x30"
+                android:src="@drawable/icon_my_serve" />
+            <TextView
+                android:id="@+id/my_driver_serve"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_x40"
+                android:text="个人信息"
+                android:layout_marginLeft="@dimen/dp_x20"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x80">
+
+            <ImageView
+                android:layout_width="@dimen/dp_x50"
+                android:layout_height="@dimen/dp_x40"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_my_setting"
+                android:layout_marginLeft="@dimen/dp_x30" />
+            <TextView
+                android:id="@+id/my_driver_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_x40"
+                android:text="版本升级"
+                android:layout_marginLeft="@dimen/dp_x20"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x80">
+
+            <ImageView
+                android:layout_width="@dimen/dp_x50"
+                android:layout_height="@dimen/dp_x40"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_my_quit"
+                android:layout_marginLeft="@dimen/dp_x30" />
+            <TextView
+                android:id="@+id/my_driver_quit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_x40"
+                android:text="退出登录"
+                android:layout_marginLeft="@dimen/dp_x20"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

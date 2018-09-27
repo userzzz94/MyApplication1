@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.huafeng.com.myapplication1.activity.MainActivity_Driver"
+    android:orientation="vertical" >
+
+    <activity.huafeng.com.myapplication1.view.NoScrollViewPager
+        android:id="@+id/activity_main_driver_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </activity.huafeng.com.myapplication1.view.NoScrollViewPager>
+
+    <!-- 这里可以添加一条间隔线 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/gray_color1"/>
+
+    <RadioGroup
+        android:id="@+id/activity_main_driver_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_driver_sendcar"
+            style="@style/activity_main_radiobutton_style"
+            android:text="发车"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_driver_cooperation"
+            style="@style/activity_main_radiobutton_style"
+            android:text="在途" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_driver_search"
+            style="@style/activity_main_radiobutton_style"
+            android:text="查询" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_driver_mine"
+            style="@style/activity_main_radiobutton_style"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x120"
+        android:background="@color/blue_low"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_msearch_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="车队订单查询"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/pager_manager_search_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x80"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <RadioButton
+            android:id="@+id/pager_manager_search_dingdan"
+            style="@style/style_pager_manager_search_radiogroupstyle"
+            android:text="车队订单"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/pager_manager_search_zaitu"
+            android:text="司机在途"
+            style="@style/style_pager_manager_search_radiogroupstyle" />
+
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/pager_manager_search_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <!--<com.jcodecraeer.xrecyclerview.XRecyclerView-->
+        <!--android:id="@+id/pager_manager_search_recycleview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+
+    <!--</com.jcodecraeer.xrecyclerview.XRecyclerView>-->
+
+
+
+</LinearLayout>

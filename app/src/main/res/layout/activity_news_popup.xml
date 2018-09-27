@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_x20"
+    tools:context="activity.huafeng.com.myapplication1.activity.TaskDialog"
+    android:orientation="vertical"
+    android:background="@drawable/popupbackground">
+
+    <!--<TextView-->
+        <!--android:id="@+id/popup_title"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="@color/black_color1"-->
+        <!--android:textSize="17sp"-->
+        <!--android:gravity="center"-->
+        <!--app:layout_constraintLeft_toLeftOf="@id/popup_summary"-->
+        <!--app:layout_constraintRight_toRightOf="@id/popup_summary"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/popup_summary"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/popup_summary"-->
+        <!--android:layout_width="218dp"-->
+        <!--android:layout_height="118dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textColor="@color/black_color1"-->
+        <!--android:textSize="17sp"-->
+        <!--android:gravity="center"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/popup_btnmsg"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="信息"-->
+        <!--android:textColor="@color/black_color1"-->
+        <!--android:textSize="17sp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toLeftOf="@id/popup_btnsure"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/popup_summary"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/popup_btnsure"-->
+        <!--android:layout_width="96dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="接单"-->
+        <!--android:textColor="@color/black_color1"-->
+        <!--android:textSize="17sp"-->
+        <!--app:layout_constraintLeft_toRightOf="@id/popup_btnmsg"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/popup_summary"/>-->
+
+</android.support.constraint.ConstraintLayout>

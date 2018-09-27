@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_x230"
+    android:layout_centerVertical="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/pager_driver_cooperation_llnum"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计划单号"
+            android:textSize="17sp"
+            android:textColor="@color/black_color1"/>
+        <TextView
+            android:id="@+id/pager_driver_search_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234"
+            android:textSize="15sp"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x15"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pager_driver_search_linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x40"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/pager_driver_cooperation_llnum">
+
+        <TextView
+            android:id="@+id/pager_driver_search_qsd_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+        <ImageView
+            android:layout_width="@dimen/dp_x40"
+            android:layout_height="@dimen/dp_x40"
+            android:src="@drawable/icon_main_to_pressed" />
+        <TextView
+            android:id="@+id/pager_driver_search_zdd_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="济南"
+            android:textSize="17sp"
+            android:textColor="@color/black_color1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pager_driver_search_linearlayout2"
+        android:layout_width="@dimen/dp_x580"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_driver_search_linearlayout1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="货物名称"
+                android:textColor="@color/black_color1"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pager_driver_search_cargoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="煤"
+                android:textColor="#457bad"
+                android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="煤种"
+                android:textColor="@color/black_color1"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/pager_driver_search_cargotype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="123"
+                android:textColor="#457bad"
+                android:layout_marginLeft="@dimen/dp_x15"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/pager_driver_search_linearlayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_driver_search_linearlayout2">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录入人"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/pager_driver_search_lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="煤"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pager_driver_search_linearlayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pager_driver_search_linearlayout3">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="录入时间"
+            android:textColor="@color/black_color1"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/pager_driver_search_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="煤"
+            android:textColor="#457bad"
+            android:layout_marginLeft="@dimen/dp_x50"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pager_driver_search_zt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pager_driver_search_linearlayout4"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/pager_driver_search_linearlayout2"
+        android:padding="@dimen/dp_x10"
+        android:text="状态"
+        android:textColor="@color/gray_color2"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_x1"
+        android:background="@color/gray_color1"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 图层1(oval) -->
+    <!-- left,top,right,bottom定义为-10，是为了扩大oval，达到覆盖四角的效果 -->
+    <item android:left="-8dp" android:top="-8dp" android:right="-8dp" android:bottom="-8dp">
+        <shape
+            android:shape="oval">
+            <!-- oval_inner[内部]________边框__ -->
+            <stroke
+                android:width="10dp"
+                android:color="#FFFFFF" />
+            <!-- oval_inner_size[大小(除去边线)] ，也是最终裸露出来的圆形图像区域-->
+            <size
+                android:height="30dp"
+                android:width="30dp" />
+            <!-- 使oval_inner透明，裸露出将来设置的背景图片 -->
+            <gradient android:centerColor="#0000" />
+        </shape>
+    </item>
+
+</layer-list>
