@@ -321,7 +321,7 @@ public class LoginActivity extends BaseActivity {
                                       public void onFailed(String s, String s1) {
                                           Log .e("onFailed","\"onFailed\"");
 
-                                          ToastUtils.getInstance(LoginActivity.this).showToast(  "阿里推送绑定失败 " + s+  " "+s1 );
+                                          //ToastUtils.getInstance(LoginActivity.this).showToast(  "阿里推送绑定失败 " + s+  " "+s1 );
 
                                       }
                                   });

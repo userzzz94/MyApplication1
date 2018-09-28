@@ -93,34 +93,45 @@
                 android:text="货物名称"
                 android:textColor="@color/black_color1"
                 android:textSize="17sp" />
-            <TextView
+            <activity.huafeng.com.myapplication1.view.AutoScrollTextView
                 android:id="@+id/pager_manager_search_cargoname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:text="煤"
                 android:textColor="#457bad"
-                android:layout_marginLeft="@dimen/dp_x15"/>
+                android:layout_marginLeft="@dimen/dp_x15"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
             <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="货物吨位"
             android:textColor="@color/black_color1"
             android:textSize="17sp" />
-            <TextView
+            <activity.huafeng.com.myapplication1.view.AutoScrollTextView
             android:id="@+id/pager_manager_search_cargoweight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:text="10吨"
             android:textColor="#457bad"
-            android:layout_marginLeft="@dimen/dp_x15"/>
+            android:layout_marginLeft="@dimen/dp_x15"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"/>
         </LinearLayout>
 
     </LinearLayout>
