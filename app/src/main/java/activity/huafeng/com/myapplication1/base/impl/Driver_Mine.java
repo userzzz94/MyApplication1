@@ -189,7 +189,7 @@ public class Driver_Mine extends BasePager {
                     public void onSuccess(Response<String> response) {
                         Gson gson = new Gson();
                         UpdateBean bean = gson.fromJson(response.body(), UpdateBean.class);
-                        if(bean.getCode()==1){
+                        if(bean.getType()==1){
                             String serverVersion = bean.getData().getVersion();
                             serverDownloadPath = bean.getData().getUrl();
                             String updateContent = bean.getData().getDescribe();
@@ -228,7 +228,7 @@ public class Driver_Mine extends BasePager {
 
 
                         }else{// 返回来的code 0.
-                            ToastUtils.getInstance(mActivity).showToast(bean.getMsg());
+                            ToastUtils.getInstance(mActivity).showToast(bean.getMessage());
                         }
                     }
 

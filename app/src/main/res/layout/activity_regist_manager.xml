@@ -215,9 +215,9 @@
                 <ImageView
                     android:id="@+id/regist_manager_img_eye"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentRight="true"
-                    android:layout_weight="2" />
+                    android:layout_height="@dimen/dp_x40"
+                    android:layout_marginRight="@dimen/dp_x35"
+                    android:layout_weight="1.5" />
 
 
              

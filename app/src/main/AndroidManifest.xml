@@ -197,19 +197,28 @@
         </activity>
         
 
-        <activity android:name=".activity.MainActivity_Security" />
-
-        <activity android:name=".activity.MainActivity_Manager" />
-
-        <activity android:name=".activity.MainActivity_Driver" />
+        <activity
+            android:name=".activity.MainActivity_Security"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
 
         <activity
-            android:name=".activity.LoginActivity">
+            android:name=".activity.MainActivity_Manager"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.MainActivity_Driver"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <activity
+            android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity">
         </activity>
         <activity android:name=".activity.RegistDriverActivity" />
         <activity android:name=".activity.RegistManagerActivity" />

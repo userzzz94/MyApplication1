@@ -21,25 +21,25 @@
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/dp_x10">
 
-            <TextView
-                android:layout_width="0dp"
+            <activity.huafeng.com.myapplication1.view.GradientTextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
-                android:text="车队名称"
+                android:text="车队名称:"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_marginTop="5dp" />
             <TextView
                 android:id="@+id/my_name"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+
                 android:layout_gravity="center"
                 android:text="车队名称"
                 android:textSize="18sp"
                 android:textColor="@color/white"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/dp_x20"/>
 
 
         </LinearLayout>
@@ -51,25 +51,24 @@
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/dp_x10">
 
-            <TextView
-                android:layout_width="0dp"
+            <activity.huafeng.com.myapplication1.view.GradientTextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
-                android:text="登录账号"
+                android:text="登录账号:"
                 android:textSize="20sp"
                 android:textColor="@color/white"
                 android:layout_marginTop="5dp" />
 
             <TextView
                 android:id="@+id/my_tel"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
                 android:text="13894637387"
                 android:textSize="18sp"
+                android:layout_marginLeft="@dimen/dp_x20"
                 android:textColor="@color/white" />
 
         </LinearLayout>

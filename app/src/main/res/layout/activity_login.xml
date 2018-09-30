@@ -143,10 +143,9 @@
         <ImageView
             android:id="@+id/activity_login_img_eye"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_weight="2"
-            android:layout_marginRight="@dimen/dp_x10" />
+            android:layout_height="@dimen/dp_x40"
+            android:layout_weight="1.5"
+            android:layout_marginRight="@dimen/dp_x35" />
 
     </LinearLayout>
     <!-- 底下的一条灰色的分割线 -->

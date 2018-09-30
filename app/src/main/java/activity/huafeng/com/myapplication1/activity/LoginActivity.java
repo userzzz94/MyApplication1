@@ -1,6 +1,7 @@
 package activity.huafeng.com.myapplication1.activity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
@@ -111,6 +112,10 @@ public class LoginActivity extends BaseActivity {
             public void onClick(View v) {
 
                 if (isHidePwd == true) {
+
+//                    Drawable eye_open = getResources().getDrawable(R.drawable .icon_eye_open);
+//                    eye_open.setBounds(0,0,70,70);
+//                    password.setCompoundDrawables(null,null,eye_open,null);
 
                     imageView.setImageResource(R.drawable.icon_eye_open);
                     //明文

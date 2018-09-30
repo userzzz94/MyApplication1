@@ -49,11 +49,17 @@ public abstract class BaseActivity extends AppCompatActivity {
             initParam(getIntent().getExtras());
         }
 
+        //出入场动画
+        //overridePendingTransition(R.anim.activity_alpha_in,R.anim.activity_alpha_out);
+
     }
 
     @Override
     public void finish() {
         super.finish();
+        //出入场动画
+        //overridePendingTransition(R.anim.activity_alpha_in,R.anim.activity_alpha_out);
+
     }
 
     /**
