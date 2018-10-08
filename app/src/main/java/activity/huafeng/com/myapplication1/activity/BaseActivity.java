@@ -1,6 +1,10 @@
 package activity.huafeng.com.myapplication1.activity;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -10,9 +14,15 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import com.norbsoft.typefacehelper.TypefaceHelper;
+
 import activity.huafeng.com.myapplication1.R;
 import activity.huafeng.com.myapplication1.util.ToastUtils;
 import activity.huafeng.com.myapplication1.util.ToolUtil;
+
+import com.norbsoft.typefacehelper.TypefaceHelper;
+
+import static com.norbsoft.typefacehelper.TypefaceHelper.typeface;
 
 
 public abstract class BaseActivity extends AppCompatActivity {
@@ -29,6 +39,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        MyApplication application = (MyApplication)getApplication();
 
+        //typeface字体设置
+        typeface(this);
 
         // 设置是否沉浸状态栏
         if (isSetStatusBar) {
@@ -206,7 +218,24 @@ public abstract class BaseActivity extends AppCompatActivity {
         lastClickTime = System.currentTimeMillis();
         return true;
     }
+    
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        if (newConfig.fontScale != 1)//非默认值
+            getResources();
+        super.onConfigurationChanged(newConfig);
+    }
 
+    @Override
+    public Resources getResources() {
+        Resources res = super.getResources();
+        if (res.getConfiguration().fontScale != 1) {//非默认值
+            Configuration newConfig = new Configuration();
+            newConfig.setToDefaults();//设置默认
+            res.updateConfiguration(newConfig, res.getDisplayMetrics());
+        }
+        return res;
+    }
 
 
 

@@ -1,6 +1,7 @@
 package activity.huafeng.com.myapplication1.base.impl;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -21,6 +22,7 @@ import com.orhanobut.hawk.Hawk;
 import activity.huafeng.com.myapplication1.R;
 import activity.huafeng.com.myapplication1.activity.BaseActivity;
 import activity.huafeng.com.myapplication1.activity.LoginActivity;
+import activity.huafeng.com.myapplication1.activity.SetFontActivity;
 import activity.huafeng.com.myapplication1.base.BasePager;
 import activity.huafeng.com.myapplication1.bean.LoginBean_Manager;
 import activity.huafeng.com.myapplication1.bean.UpdateBean;
@@ -37,7 +39,7 @@ import static android.content.pm.PackageManager.PERMISSION_GRANTED;
 public class Manager_Mine extends BasePager {
 
     TextView name,tel;
-    TextView update,quit;
+    TextView update,quit,set;
     private LoginBean_Manager.DataManager manager;
 
     private View thisRootView;
@@ -64,6 +66,18 @@ public class Manager_Mine extends BasePager {
         manager = Hawk.get("r_manager");
         name.setText(manager.getTrueName());//姓名
         tel.setText(manager.getUserName());//用户名
+
+        //设置
+        set=thisRootView .findViewById(R.id.my_set) ;
+        set .setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               Intent intent =new Intent(mActivity , SetFontActivity .class );
+               mActivity .startActivity(intent) ;
+               
+            }
+        } );
+
 
         //退出登录
         quit=thisRootView .findViewById(R.id.my_quit) ;
@@ -150,6 +164,7 @@ public class Manager_Mine extends BasePager {
                             // 获取到 版本信息后, 进行判断
                             if(Double.parseDouble( String.valueOf( currentVersionCode ) ) == Double.parseDouble(serverVersion)){
                                 ToastUtils.getInstance(mActivity).showToast("已经是最新版本");
+                                
 
                                 Log.d("newest",serverVersion);
 

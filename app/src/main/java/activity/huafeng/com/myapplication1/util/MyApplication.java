@@ -2,6 +2,7 @@ package activity.huafeng.com.myapplication1.util;
 
 import android.app.Application;
 import android.content.Context;
+import android.graphics.Typeface;
 import android.support.multidex.MultiDex;
 import android.util.Log;
 
@@ -16,6 +17,8 @@ import com.lzy.okgo.cookie.CookieJarImpl;
 import com.lzy.okgo.cookie.store.SPCookieStore;
 import com.lzy.okgo.https.HttpsUtils;
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
+import com.norbsoft.typefacehelper.TypefaceCollection;
+import com.norbsoft.typefacehelper.TypefaceHelper;
 import com.orhanobut.hawk.Hawk;
 import com.uuzuche.lib_zxing.activity.ZXingLibrary;
 
@@ -37,6 +40,17 @@ public class MyApplication extends Application {
 
     public static boolean isDebug = true;
 
+
+    /** Multiple custom typefaces support */
+    private TypefaceCollection mJuiceTypeface;
+    /** Multiple custom typefaces support */
+    private TypefaceCollection mArchRivalTypeface;
+    /** Multiple custom typefaces support */
+    private TypefaceCollection mActionManTypeface;
+    /** Multiple custom typefaces support */
+    private TypefaceCollection mSystemDefaultTypeface;
+    /** Multiple custom typefaces support */
+    private TypefaceCollection mUbuntuTypeface;
 
     @Override
     public void onCreate() {
@@ -80,6 +94,55 @@ public class MyApplication extends Application {
         initCloudChannel(this);
 
 
+        /*
+          * 实现自定义字体的库
+          * Android Typeface Helper
+         */
+
+        // Load helper with default custom typeface (single custom typeface)
+        TypefaceHelper.init(new TypefaceCollection.Builder()
+                .set( Typeface.NORMAL, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-R.ttf"))
+                .set(Typeface.BOLD, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-B.ttf"))
+                .set(Typeface.ITALIC, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-RI.ttf"))
+                .set(Typeface.BOLD_ITALIC, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-BI.ttf"))
+                .create());
+
+        // Multiple custom typefaces support
+        mJuiceTypeface = new TypefaceCollection.Builder()
+                .set(Typeface.NORMAL, Typeface.createFromAsset(getAssets(), "fonts/Juice/JUICE_Regular.ttf"))
+                .set(Typeface.BOLD, Typeface.createFromAsset(getAssets(), "fonts/Juice/JUICE_Bold.ttf"))
+                .set(Typeface.ITALIC, Typeface.createFromAsset(getAssets(), "fonts/Juice/JUICE_Italic.ttf"))
+                .set(Typeface.BOLD_ITALIC, Typeface.createFromAsset(getAssets(), "fonts/Juice/JUICE_Bold_Italic.ttf"))
+                .create();
+
+        // Multiple custom typefaces support
+        mArchRivalTypeface = new TypefaceCollection.Builder()
+                .set(Typeface.NORMAL, Typeface.createFromAsset(getAssets(), "fonts/arch_rival/SF_Arch_Rival.ttf"))
+                .set(Typeface.BOLD, Typeface.createFromAsset(getAssets(), "fonts/arch_rival/SF_Arch_Rival_Bold.ttf"))
+                .set(Typeface.ITALIC, Typeface.createFromAsset(getAssets(), "fonts/arch_rival/SF_Arch_Rival_Italic.ttf"))
+                .set(Typeface.BOLD_ITALIC, Typeface.createFromAsset(getAssets(), "fonts/arch_rival/SF_Arch_Rival_Bold_Italic.ttf"))
+                .create();
+
+        // Multiple custom typefaces support
+        mActionManTypeface = new TypefaceCollection.Builder()
+                .set(Typeface.NORMAL, Typeface.createFromAsset(getAssets(), "fonts/Action-Man/Action_Man.ttf"))
+                .set(Typeface.BOLD, Typeface.createFromAsset(getAssets(), "fonts/Action-Man/Action_Man_Bold.ttf"))
+                .set(Typeface.ITALIC, Typeface.createFromAsset(getAssets(), "fonts/Action-Man/Action_Man_Italic.ttf"))
+                .set(Typeface.BOLD_ITALIC, Typeface.createFromAsset(getAssets(), "fonts/Action-Man/Action_Man_Bold_Italic.ttf"))
+                .create();
+
+        // Multiple custom typefaces support
+        mUbuntuTypeface = new TypefaceCollection.Builder()
+                .set(Typeface.NORMAL, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-R.ttf"))
+                .set(Typeface.BOLD, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-B.ttf"))
+                .set(Typeface.ITALIC, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-RI.ttf"))
+                .set(Typeface.BOLD_ITALIC, Typeface.createFromAsset(getAssets(), "fonts/ubuntu/Ubuntu-BI.ttf"))
+                .create();
+
+        // Multiple custom typefaces support
+        mSystemDefaultTypeface = TypefaceCollection.createSystemDefault();
+
+
     }
 
 
@@ -110,6 +173,32 @@ public class MyApplication extends Application {
                String device = pushService.getDeviceId();
                Log.e(TAG, "devicedId=======" + device);
 
+    }
+
+
+    /** Multiple custom typefaces support */
+    public TypefaceCollection getJuiceTypeface() {
+        return mJuiceTypeface;
+    }
+
+    /** Multiple custom typefaces support */
+    public TypefaceCollection getArchRivalTypeface() {
+        return mArchRivalTypeface;
+    }
+
+    /** Multiple custom typefaces support */
+    public TypefaceCollection getActionManTypeface() {
+        return mActionManTypeface;
+    }
+
+    /** Multiple custom typefaces support */
+    public TypefaceCollection getSystemDefaultTypeface() {
+        return mSystemDefaultTypeface;
+    }
+
+    /** Multiple custom typefaces support */
+    public TypefaceCollection getUbuntuTypeface() {
+        return mUbuntuTypeface;
     }
 
     

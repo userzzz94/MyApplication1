@@ -158,6 +158,7 @@
                 android:gravity="center_vertical"
                 android:layout_gravity="center_vertical"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_x80">
@@ -167,6 +168,27 @@
                 android:layout_height="@dimen/dp_x40"
                 android:layout_gravity="center"
                 android:src="@drawable/icon_my_setting"
+                android:layout_marginLeft="@dimen/dp_x30" />
+            <TextView
+                android:id="@+id/my_set"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_x40"
+                android:text="设置"
+                android:layout_marginLeft="@dimen/dp_x20"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_x80">
+
+            <ImageView
+                android:layout_width="@dimen/dp_x50"
+                android:layout_height="@dimen/dp_x40"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_my_update"
                 android:layout_marginLeft="@dimen/dp_x30" />
             <TextView
                 android:id="@+id/my_update"
